@@ -7,6 +7,6 @@ const passingGrades = grades.filter(num => num >= 70);
 // Same as:
 // const passingGrades = grades.filter(function (num) {
 //   return num >= 50;
-})
+// })
 console.log(passingGrades);
 
