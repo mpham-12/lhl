@@ -4,10 +4,8 @@ const takeUntil = function (array, callback) {
     if (callback(element)) {
       return newArray;
     } else {
-      newArray.push(element);
-    }
+      newArray.push(element); 
   }
-  return newArray;
 }
 
 
