@@ -1,0 +1,18 @@
+{
+  "name": "@martinpdev/lotide",
+  "version": "1.0.0",
+  "description": "A mini version of Lodash, created as an assignment for Lighthouse Labs.",
+  "main": "assertArraysEqual.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Martin Pham",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^9.1.3"
+  }
+}
