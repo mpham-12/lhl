@@ -1,5 +1,6 @@
 const { UPKEY, LEFTKEY, DOWNKEY, RIGHTKEY } = require('./constants.js');
-const hello = "Hello";
+const msg = "Say: ";
+const hello = "Hello there!";
 
 const setupInput = function (conn) {
   connection = conn;
@@ -36,7 +37,7 @@ const handleUserInput = (key) => {
     interval(RIGHTKEY);
   }
   if (key === "h") {
-    connection.write(hello);
+    connection.write(msg + hello);
   }
 };
 
