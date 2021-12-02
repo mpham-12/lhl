@@ -1,3 +1,6 @@
+const hello = "Hello";
+const msg = "Say: ";
+
 const setupInput = function (conn) {
   connection = conn;
   const stdin = process.stdin;
