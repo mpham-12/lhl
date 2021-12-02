@@ -1,5 +1,5 @@
+const { UPKEY, LEFTKEY, DOWNKEY, RIGHTKEY } = require('./constants.js');
 const hello = "Hello";
-const msg = "Say: ";
 
 const setupInput = function (conn) {
   connection = conn;
@@ -20,16 +20,23 @@ const handleUserInput = (key) => {
     process.exit();
   }
   if (key === 'w') {
-    connection.write("Move: up");
+    clearInterval(func);
+    interval(UPKEY);
   }
   if (key === 'a') {
-    connection.write("Move: left");
+    clearInterval(func);
+    interval(LEFTKEY);
   }
   if (key === 's') {
-    connection.write("Move: down");
+    clearInterval(func);
+    interval(DOWNKEY);
   }
   if (key === 'd') {
-    connection.write("Move: right");
+    clearInterval(func);
+    interval(RIGHTKEY);
+  }
+  if (key === "h") {
+    connection.write(hello);
   }
 };
 
